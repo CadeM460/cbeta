@@ -3,7 +3,7 @@ local ImGui = loadstring(game:HttpGet("https://github.com/depthso/Roblox-ImGUI/r
 local KeySystem =
     ImGui:CreateWindow(
     {
-        Title = "Key system",
+        Title = "Key system (Get Key at .gg/6PrPM326ua)",
         TabsBar = false,
         AutoSize = "Y",
         NoCollapse = true,
@@ -32,7 +32,7 @@ Content:Button(
     {
         Text = "Enter",
         Callback = function()
-            if Key:GetValue() == "Cade" then
+            if Key:GetValue() == "CMBETA" then
                 loadstring(
                     game:HttpGet("https://gist.githubusercontent.com/Shag420/269382f5ae1985524193ef049bfb8216/raw")
                 )()
@@ -109,7 +109,7 @@ Content:Button(
                     {
                         Name = "Copy discord to clipboard",
                         Callback = function()
-                            setclipboard("fluxus_Jayden")
+                            setclipboard("https://discord.gg/6PrPM326ua")
                         end
                     }
                 )
