@@ -43,17 +43,6 @@ Window:MakeButton({
         verifyKey(KeyInput:GetText())
     end
 })
-loadstring(game:HttpGet("https://gist.githubusercontent.com/Shag420/269382f5ae1985524193ef049bfb8216/raw"))()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "CHICBLOCKO SCRIPT BY CadeM460 NOOBS!", HidePremium = false, SaveConfig = false, ConfigFolder = "CadeM460"})
-for i,v in next, game.Players:GetPlayers() do
-if v.Name == "routebooter" then
-OrionLib:MakeNotification({
-	Name = "!Owner of script is in game!",
-	Content = "Username: CadeM460",
-	Image = "rbxassetid://9736547820",
-	Time = 30
-})
 -- ... (Your existing code) ...
 
 -- Orion key system initialization (from previous script)
@@ -72,6 +61,18 @@ local function protectedFeature()
 end
 
 -- ... (Rest of your game logic) ...
+loadstring(game:HttpGet("https://gist.githubusercontent.com/Shag420/269382f5ae1985524193ef049bfb8216/raw"))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "CHICBLOCKO SCRIPT BY CadeM460 NOOBS!", HidePremium = false, SaveConfig = false, ConfigFolder = "CadeM460"})
+for i,v in next, game.Players:GetPlayers() do
+if v.Name == "routebooter" then
+OrionLib:MakeNotification({
+	Name = "!Owner of script is in game!",
+	Content = "Username: CadeM460",
+	Image = "rbxassetid://9736547820",
+	Time = 30
+})
+
 else
 --nil
 end
