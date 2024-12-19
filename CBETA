@@ -54,7 +54,24 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://9736547820",
 	Time = 30
 })
+-- ... (Your existing code) ...
 
+-- Orion key system initialization (from previous script)
+-- ... 
+
+-- Example: Protecting a function
+local function protectedFeature()
+    if verifyKey(KeyInput:GetText()) then 
+        -- Code for the protected feature goes here
+        print("Access granted! Executing protected feature...")
+        -- ...
+    else
+        -- Handle unauthorized access (e.g., display a message)
+        print("Invalid key! Access denied.")
+    end
+end
+
+-- ... (Rest of your game logic) ...
 else
 --nil
 end
