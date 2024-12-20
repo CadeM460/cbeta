@@ -7,8 +7,8 @@ local KeySystem =
         TabsBar = false,
         AutoSize = "Y",
         NoCollapse = true,
-        NoResize = false,
-        NoClose = false
+        NoResize = true,
+        NoClose = true
     }
 )
 
@@ -1099,4 +1099,3 @@ Content:Button(
         end
     }
 )
- 
