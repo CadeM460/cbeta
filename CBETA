@@ -1070,18 +1070,25 @@ Content:Button(
                 )
                 Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddLabel("Miscellaneous Features:")
-                Tab:AddButton(
+            Tab:AddButton(
                     {
-                        Name = "Aimbot (First person is better for it.)",
+                        Name = "Instant Proximty Prompts",
                         Callback = function()
-                          loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()()               
+                            game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(
+                                function(prompt)
+                                    fireproximityprompt(prompt)
                                 end
-                            }
+                            )
+                        end
+                    }
+                )
                 Tab:AddButton(
                     {
                         Name = "Infinite Yield Admin",
                         Callback = function()
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+                            loadstring(
+                                game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
+                            )()
                         end
                     }
                 )
