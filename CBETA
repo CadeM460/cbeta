@@ -8,7 +8,7 @@ local KeySystem =
         AutoSize = "Y",
         NoCollapse = true,
         NoResize = true,
-        NoClose = true
+        NoClose = False
     }
 )
 
@@ -41,10 +41,10 @@ Content:Button(
                 local Window =
                     OrionLib:MakeWindow(
                     {
-                        Name = "CHICBLOCKO SCRIPT BY CadeM460 NOOBS!",
+                        Name = "CadeM460_2024's Script (OP!)",
                         HidePremium = false,
                         SaveConfig = false,
-                        ConfigFolder = "CadeM460"
+                        ConfigFolder = "CadeM460_Chicblocko"
                     }
                 )
                 for i, v in next, game.Players:GetPlayers() do
@@ -74,8 +74,8 @@ Content:Button(
                         if plr.UserId == 4216859230 then
                             OrionLib:MakeNotification(
                                 {
-                                    Name = "!Owner of script has joined game!",
-                                    Content = "Username: CadeM460 | your zesty bestie",
+                                    Name = "!Creator of the Script, CadeM460_2024.!",
+                                    Content = "Username: CadeM460",
                                     Image = "rbxassetid://9736547820",
                                     Time = 30
                                 }
@@ -91,7 +91,7 @@ Content:Button(
                 OrionLib:MakeNotification(
                     {
                         Name = "Credits:",
-                        Content = "CadeM460",
+                        Content = "CadeM460_2024",
                         Image = "rbxassetid://0",
                         Time = 10
                     }
@@ -104,7 +104,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "CadeM460")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddButton(
                     {
                         Name = "Copy discord to clipboard",
@@ -147,7 +147,7 @@ Content:Button(
                                             game.Players.LocalPlayer.Character:MoveTo(
                                                 v.Position + Vector3.new(-2, 2, 0)
                                             )
-                                            task.wait(0.1)
+                                            task.wait(0.8)
                                             fireproximityprompt(v.cleanape)
                                             task.wait()
                                             game:GetService("ReplicatedStorage").kanesjobevents.getcash:FireServer()
@@ -176,7 +176,7 @@ Content:Button(
                 )
                 Tab:AddToggle(
                     {
-                        Name = "Money Manufacture Auto-Farm [LVL 15+]",
+                        Name = "Money Manufacture Auto-Farm [LVL 20+]",
                         Default = false,
                         Callback = function(Value)
                             getgenv().autofarm = Value
@@ -245,7 +245,7 @@ Content:Button(
                 )
                 Tab:AddToggle(
                     {
-                        Name = "Money Manufacture Auto-Farm w/ Auto-Sell [LVL 15+]",
+                        Name = "Money Manufacture Auto-Farm w/ Auto-Sell [LVL 20+]",
                         Default = false,
                         Callback = function(Value)
                             getgenv().autofarm1 = Value
@@ -368,7 +368,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddLabel("Shop Prompt Activators:")
                 for i, v in next, game:GetService("Players").LocalPlayer.PlayerGui:GetChildren() do
                     if
@@ -394,7 +394,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddLabel("Teleport Options:")
                 Tab:AddButton(
                     {
@@ -511,7 +511,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddLabel("Door Click Activators:")
                 for i, v in next, game:GetService("Workspace").clickdoors:GetDescendants() do
                     if
@@ -540,10 +540,10 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddParagraph(
                     "Notice:",
-                    "These are totally visual aka client sided non FE meaning no other players can see these items its just only visual to you for looks"
+                    "These are totally visual aka client sided non FE meaning no other players can see these items its just only visual to you for looks, Basically Just for you."
                 )
                 for i, v in next, game:GetService("ReplicatedStorage").bighanban:GetChildren() do
                     Tab:AddButton(
@@ -565,7 +565,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddParagraph(
                     "Notice:",
                     "You need to have purchased an apartment before using these features go to the Fun tab to easily purchase an apartment[$60]"
@@ -649,7 +649,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460")
                 Tab:AddParagraph(
                     "Notice:",
                     "Press Shift+F9 or say /console in chat to see the peoples stats in console after executed and go down"
@@ -666,31 +666,10 @@ Content:Button(
                             --while statchecker do
                             --task.wait(2.5)
                             local p = warn
-                            p("                        . ")
-                            p("                       .:. ")
-                            p("                       :|: ")
-                            p("                      .:|:. ")
-                            p("                      ::|:: ")
-                            p("       :.             ::|::             .: ")
-                            p("       :|:.          .::|::.          .:|: ")
-                            p("       ::|:.         :::|:::         .:|:; ")
-                            p("       `::|:.        :::|:::        .:|::' ")
-                            p("        ::|::.       :::|:::       .::|:; ")
-                            p("        `::|::.      :::|:::      .::|::' ")
-                            p("         :::|::.     :::|:::     .::|::; ")
-                            p("         `:::|::.    :::|:::    .::|::;' ")
-                            p("`::.      `:::|::.   :::|:::   .::|::;'      .:;' ")
-                            p(" `:::..      ::|::.  :::|:::  .::|::    ..::;' ")
-                            p("   `:::::.    ':|::. :::|::: .::|:'   ,::::;' ")
-                            p("     `:::::.    ':|:::::|:::::|:'   :::::;' ")
-                            p("       `:::::.:::::|::::|::::|::::.,:::;' ")
-                            p("          ':::::::::|:::|:::|:::::::;:' ")
-                            p("             ':::::::|::|::|:::::::'' ")
-                            p("                  `::::::::::;' ")
-                            p("                 .:;'' ::: ``::. ")
-                            p("                      :':': ")
-                            p("                        ;  ")
-                            p("          [Shag420#6729's Stat Checker] ")
+                            p("                     &*   ( 0 ) ")
+                            p("                        /\      ")
+                            p("                    \_______/   ")
+                            p("          [CadeM460_2024's Stat Checker] ")
                             p("-------------------------------------------------- ")
                             for i, v in next, game.Players:GetPlayers() do
                                 p(v.Name .. ": ")
@@ -733,7 +712,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddParagraph(
                     "What is spoofing:",
                     "Spoofing changes values of things on the clients side locally meaning no other player can see it, its just for visuals and looks"
@@ -900,7 +879,7 @@ Content:Button(
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 -- game.Workspace:FindFirstChild(game.Players.LocalPlayer.Name.."apartment").
                 Tab:AddLabel("Tool Features:")
                 Tab:AddButton(
