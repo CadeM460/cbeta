@@ -7,8 +7,8 @@ local KeySystem =
         TabsBar = false,
         AutoSize = "Y",
         NoCollapse = true,
-        NoResize = true,
-        NoClose = False
+        NoResize = false,
+        NoClose = false
     }
 )
 
@@ -100,7 +100,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Main",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://10111107788",
                         PremiumOnly = false
                     }
                 )
@@ -390,7 +390,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Teleports",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://11514102373",
                         PremiumOnly = false
                     }
                 )
@@ -536,7 +536,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Fake Guns/Items",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://90205967734810",
                         PremiumOnly = false
                     }
                 )
@@ -561,7 +561,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "APT Safe",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://96458759821859",
                         PremiumOnly = false
                     }
                 )
@@ -645,7 +645,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Stat Checker",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://113872863326149",
                         PremiumOnly = false
                     }
                 )
@@ -708,7 +708,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Spoofing",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://90205967734810",
                         PremiumOnly = false
                     }
                 )
@@ -875,7 +875,7 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Fun",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://140371788003858",
                         PremiumOnly = false
                     }
                 )
@@ -1064,19 +1064,17 @@ Content:Button(
                     Window:MakeTab(
                     {
                         Name = "Misc.",
-                        Icon = "rbxassetid://4483345998",
+                        Icon = "rbxassetid://70380974570032",
                         PremiumOnly = false
                     }
                 )
-                Tab:AddParagraph("Made By:", "Shag420#6729")
+                Tab:AddParagraph("Made By:", "CadeM460_2024")
                 Tab:AddLabel("Miscellaneous Features:")
                 Tab:AddButton(
                     {
-                        Name = "Instant Proximty Prompts",
+                        Name = "Aimbot (First person is better for it.)",
                         Callback = function()
-                            game:GetService("ProximityPromptService").PromptButtonHoldBegan:Connect(
-                                function(prompt)
-                                    fireproximityprompt(prompt)
+                          loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V3/main/src/Aimbot.lua"))()()               
                                 end
                             )
                         end
@@ -1086,9 +1084,7 @@ Content:Button(
                     {
                         Name = "Infinite Yield Admin",
                         Callback = function()
-                            loadstring(
-                                game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source")
-                            )()
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
                         end
                     }
                 )
