@@ -32,7 +32,7 @@ Content:Button(
     {
         Text = "Enter",
         Callback = function()
-            if Key:GetValue() == "CMBETA" then
+            if Key:GetValue() == "CM460SCRIPTSAREOP" then
                 loadstring(
                     game:HttpGet("https://gist.githubusercontent.com/Shag420/269382f5ae1985524193ef049bfb8216/raw")
                 )()
@@ -41,7 +41,7 @@ Content:Button(
                 local Window =
                     OrionLib:MakeWindow(
                     {
-                        Name = "CadeM460_2024's Script (OP!)",
+                        Name = "CadeM460_2024's Chicblocko Script (OP!)",
                         HidePremium = false,
                         SaveConfig = false,
                         ConfigFolder = "CadeM460_Chicblocko"
